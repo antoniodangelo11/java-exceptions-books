@@ -17,10 +17,12 @@ public class Main {
                 System.out.print("Inserisci il numero di libri nel catalogo: ");
                 numBooks = input.nextInt();
                 input.nextLine();
+
                 validInput = true;
+
             } catch (InputMismatchException e) {
                 System.out.println("Errore: Inserisci un numero valido.");
-                input.nextLine(); // Per consumare l'input non valido
+                input.nextLine();
             }
         }
 
